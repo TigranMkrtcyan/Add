@@ -10,6 +10,15 @@ body {
     font-style: normal;
 }
 
+.noto-sans-armenian {
+    font-family: "Noto Sans Armenian", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
 
 .canvas {
     margin: 0 auto;
@@ -93,7 +102,7 @@ h1 {
 }
 
 .coins {
-    height: 300px;
+    height:200px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -101,6 +110,40 @@ h1 {
     position: relative;
 }
 
+
+.audiobtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    z-index: 1000 !important;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: none !important;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.audiobtn:hover {
+    opacity: 1;
+    transform: scale(1.1) !important;
+}
+
+.header {
+    margin-top: 60px;
+    font-weight: 100;
+    font-family: "Noto Sans Armenian", sans-serif;
+    color: #5C2018;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
 
 @keyframes text1 {
     from {

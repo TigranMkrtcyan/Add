@@ -17,7 +17,7 @@ canvases.forEach((canvas) => {
     function erase(x, y) {
         ctx.globalCompositeOperation = 'destination-out';
         ctx.beginPath();
-        ctx.arc(x, y, 25, 0, Math.PI * 2); // ← увеличил размер
+        ctx.arc(x, y, 20, 0, Math.PI * 2);
         ctx.fill();
     }
 
@@ -47,6 +47,66 @@ canvases.forEach((canvas) => {
 
         erase(touch.clientX - rect.left, touch.clientY - rect.top);
     });
+});
+
+let animitems = document.querySelectorAll('._anim-items')
+const timerContainer = document.getElementById('timerContainer');
+const daysElement = document.getElementById('days');
+const hoursElement = document.getElementById('hours');
+const minutesElement = document.getElementById('minutes');
+const secondsElement = document.getElementById('seconds');
+
+let isPlaying = false
+
+if (animitems.length > 0) {
+    window.addEventListener("scroll", animOnScroll);
+    function animOnScroll(params) {
+        for (let i = 0; i < animitems.length; i++) {
+            const animitem = animitems[i]
+            const animitemHeight = animitem.offsetHeight
+            const animitemOffset = offset(animitem).top
+            const animStart = 1;
+
+            let animitemPoint = window.innerHeight - animitemHeight / animStart;
+
+            if (animitemHeight > window.innerHeight) {
+                animitemPoint = window.innerHeight - window.innerHeight / animStart;
+            }
+
+            if ((pageYOffset > animitemOffset - animitemPoint) && pageYOffset < (animitemOffset + animitemHeight)) {
+                animitem.classList.add("active")
+            } else {
+                animitem.classList.remove("active")
+            }
+        }
+    }
+    function offset(el) {
+        const rect = el.getBoundingClientRect();
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        const scrollTop = window.pageXOffset || document.documentElement.scrollTop
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+
+}
+
+
+window.addEventListener('DOMContentLoaded', function () {
+    const audioElement = document.getElementById('audioElement');
+    const audiobtn = document.getElementById('audiobtnRef');
+    const audioImg = document.getElementById('audioImg');
+
+    audiobtn.addEventListener('click', function () {
+        if (audioElement.paused) {
+            audioElement.play();
+            audioImg.src = "Play.png"; 
+        } else {
+            audioElement.pause();
+            audioImg.src = "Pause.png"; 
+        }
+    });
+
+    audiobtn.style.cursor = 'pointer';
+    audiobtn.style.zIndex = '1000';
 });
 
 function disableScroll() {
