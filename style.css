@@ -1,0 +1,143 @@
+body {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.canvas {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    touch-action: none;
+    position: absolute;
+
+}
+
+.head {
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    max-width: 430px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+video {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 200;
+}
+
+.name1 {
+    font-size: 78px;
+    position: absolute;
+    top: 32%;
+    left: -80%;
+    transform: translate(-5%, -5%);
+    color: #5C2018;
+    animation: text1 1s linear forwards 5s;
+}
+
+.and {
+    font-size: 78px;
+    position: absolute;
+    top: -35%;
+    left: 44%;
+    transform: translateY(-50%);
+    color: #5C2018;
+    animation: text2 1s linear forwards 5s;
+}
+
+.name2 {
+    font-size: 78px;
+    position: absolute;
+    top: 50%;
+    left: -120%;
+    transform: translate(-5%, -5%);
+    color: #5C2018;
+    animation: text3 1s linear forwards 5s;
+}
+
+.date {
+    position: relative;
+    width: 105px;
+    height: 105px;
+}
+
+.num {
+    font-size: 59PX;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.coins {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+}
+
+
+@keyframes text1 {
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 29%;
+    }
+}
+
+@keyframes text2 {
+    from {
+        top: -35%;
+    }
+
+    to {
+        top: 45%;
+    }
+}
+
+@keyframes date {
+    from {
+        top: -35%;
+    }
+
+    to {
+        top: 65%;
+    }
+}
+
+@keyframes text3 {
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 33%;
+    }
+}
