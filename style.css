@@ -114,6 +114,14 @@ h1 {
     gap: 20px;
     justify-content: center;
     position: relative;
+    opacity: 0;
+    transform: translateY(-5%);
+    transition: 1s;
+}
+
+.coins.active {
+    transform: translateY(-5%);
+    opacity: 1;
 }
 
 
@@ -149,12 +157,21 @@ h1 {
     font-size: 16px;
     display: block;
     text-align: center;
+    opacity: 0;
+    transform: translateY(-5%);
+    transition: 1s;
 }
 
+.header.active {
+    transform: translateY(-5%);
+    opacity: 1;
+}
+
+
 .later {
-    background-image:url(Background.png) ;
-      background-repeat: no-repeat;
-  background-position: center;
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
     margin: auto;
     /* margin-top: 80px; */
@@ -203,6 +220,93 @@ h1 {
     font-weight: 100;
 }
 
+
+.maps {
+    text-align: center;
+    max-width: 480px;
+    width: 100%;
+    z-index: 12;
+    color: #5C2018;
+}
+
+.place {
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    min-height: 300px;
+    height: 320px;
+    z-index: 16;
+}
+
+#img {
+    margin-top: 10px;
+}
+
+.placeimg {
+    max-width: 100px;
+    width: 100%;
+    height: 120px;
+    margin: 10px;
+    z-index: 9;
+}
+
+.placetexts {
+    margin: auto;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.placetext {
+    font-size: 18px;
+    font-family: "Bruney";
+    font-weight: 400;
+}
+
+.placespan {
+    font-size: 18px;
+    font-weight: 900;
+    font-family: "Noto sans Armenian";
+}
+
+.card {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-5%);
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.map {
+
+
+    text-align: center;
+    border: 1px solid #5C2018;
+    padding: 15px 10px;
+    border-radius: 10px;
+    max-width: 280px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.mapheader {
+    margin-top: 40px;
+    font-size: 17px;
+    font-family: "Kotayk";
+}
+
+.card.active {
+    transform: translateY(-5%);
+    opacity: 1;
+}
 
 @keyframes text1 {
     from {
