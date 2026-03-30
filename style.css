@@ -154,7 +154,7 @@ h1 {
 .later {
     background-image:url(Background.png) ;
       background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: center;
     background-size: contain;
     margin: auto;
     /* margin-top: 80px; */
