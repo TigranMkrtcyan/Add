@@ -98,10 +98,10 @@ window.addEventListener('DOMContentLoaded', function () {
     audiobtn.addEventListener('click', function () {
         if (audioElement.paused) {
             audioElement.play();
-            audioImg.src = "Play.png"; 
+            audioImg.src = "Play.png";
         } else {
             audioElement.pause();
-            audioImg.src = "Pause.png"; 
+            audioImg.src = "Pause.png";
         }
     });
 
@@ -127,4 +127,17 @@ window.onload = () => {
 
 disableScroll();
 
-setTimeout(enableScroll, 7000);
+const video = document.querySelector('video');
+
+const anim1 = document.querySelector('.name1');
+const anim2 = document.querySelector('.and');
+const anim3 = document.querySelector('.name2');
+
+video.addEventListener('ended', () => {
+
+    anim1.classList.add('act');
+    anim2.classList.add('act');
+    anim3.classList.add('act');
+    enableScroll()
+
+});

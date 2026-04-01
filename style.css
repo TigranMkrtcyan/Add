@@ -5,10 +5,18 @@ body {
 }
 
 @font-face {
-    font-family: "Kotayk", sans-serif;
-    src: url("Shrifts/Kotayk.ttf") format("truetype");
+    font-family: "Kotayk";
+    src: url("Kotayk-Italic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
+.cormorant {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style: normal;
+}
 
 .great-vibes-regular {
     font-family: "Great Vibes", cursive;
@@ -63,6 +71,10 @@ h1 {
     font-weight: 200;
 }
 
+.name1.act {
+    animation: text1 1s linear forwards;
+}
+
 .name1 {
     font-size: 78px;
     position: absolute;
@@ -70,7 +82,6 @@ h1 {
     left: -80%;
     transform: translate(-5%, -5%);
     color: #5C2018;
-    animation: text1 1s linear forwards 5s;
 }
 
 .and {
@@ -80,7 +91,14 @@ h1 {
     left: 44%;
     transform: translateY(-50%);
     color: #5C2018;
-    animation: text2 1s linear forwards 5s;
+}
+
+.and.act {
+    animation: text2 1s linear forwards;
+}
+
+.name2.act {
+    animation: text3 1s linear forwards;
 }
 
 .name2 {
@@ -90,7 +108,6 @@ h1 {
     left: -120%;
     transform: translate(-5%, -5%);
     color: #5C2018;
-    animation: text3 1s linear forwards 5s;
 }
 
 .date {
@@ -125,7 +142,7 @@ h1 {
 }
 
 .au {
-    max-width: 430px;
+    max-width: 270px;
     width: 100%;
     height: 70px;
     display: flex;
@@ -134,7 +151,8 @@ h1 {
 }
 
 .audio-controls {
-    position: relative;;
+    position: relative;
+    ;
 }
 
 .audiobtn {
@@ -322,9 +340,83 @@ a {
 
 
 .line {
+    overflow: hidden;
     max-width: 430px;
     width: 100%;
     height: 70.25px;
+}
+
+.long {
+    max-width: 430px;
+    width: 100%;
+    height: 675px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-image: url(long.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    color: #5C2018;
+}
+
+.m {
+    text-align: center;
+    border: 1px solid #5C2018;
+    padding: 15px 10px;
+    border-radius: 10px;
+    max-width: 220px;
+    height: 15px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.pltext {
+    font-size: 19px;
+    font-family: "Noto Sans Armenian", sans-serif;
+    font-weight: 100;
+    color: #5C2018;
+    margin-bottom: 50px;
+}
+
+.platext {
+    display: flex;
+    flex-direction: column;
+    font-family: "Noto Sans Armenian", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.sspan {
+    font-size: 27px;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.t {
+    color: #5C2018;
+    font-family: "Kotayk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 23px;
+}
+
+#t {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 33px;
 }
 
 @keyframes text1 {
