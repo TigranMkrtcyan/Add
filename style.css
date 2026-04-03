@@ -11,10 +11,17 @@ body {
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "KotaykR";
+    src: url("Kotayk-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 .cormorant {
     font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
-    font-weight:100;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -345,10 +352,18 @@ a {
     height: 70.25px;
 }
 
+.tow {
+    overflow: hidden;
+    max-width: 430px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: -20%;
+}
+
 .long {
     max-width: 430px;
     width: 100%;
-    height: 675px;
+    height: 660px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,6 +431,111 @@ a {
     font-style: italic;
     font-size: 33px;
 }
+
+
+.times {
+    max-width: 480px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.time-untit {
+    max-height: 50px;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: #5C2018 2px solid;
+    border-radius: 5px;
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-family: "Cormorant Garamond";
+    margin-bottom: 15px;
+}
+
+.timeName {
+    font-size: 20px;
+    font-family: "KotaykR";
+    font-weight: 100;
+}
+
+.times.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.timerhead {
+    font-family: "Bruney";
+    font-weight: 800;
+}
+
+.timer {
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: 1s;
+    z-index: 12;
+}
+
+.timer.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.mark {
+    margin-top: -30px;
+    font-family: "Bruney";
+    font-weight: 100;
+    font-size: 36px;
+}
+
+
+.lng-timerhead {
+    font-family: "KotaykR";
+    color: #5C2018;
+}
+
+.cars {
+    max-width: 430px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.car {
+
+    overflow: hidden;
+    width: 90px;
+    height: 100px;
+}
+
+.cart {
+    text-align: center;
+    color: #5C2018;
+    font-family: "Noto Sans Armenian", sans-serif;
+}
+
 
 @keyframes text1 {
     from {

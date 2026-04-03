@@ -141,3 +141,35 @@ video.addEventListener('ended', () => {
     enableScroll()
 
 });
+
+const targetDate = new Date('2026-09-26T00:00:00');
+
+function calculateTimeLeft() {
+    const difference = targetDate - new Date();
+    if (difference <= 0) return null;
+
+    return {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / (1000 * 60)) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+    };
+}
+
+
+function updateTimer() {
+    const timeLeft = calculateTimeLeft();
+
+    if (!timeLeft) {
+        timerContainer.innerHTML = '<div class="left"">Time over</div>';
+        return;
+    }
+
+    daysElement.textContent = String(timeLeft.days).padStart(2, '0');
+    hoursElement.textContent = String(timeLeft.hours).padStart(2, '0');
+    minutesElement.textContent = String(timeLeft.minutes).padStart(2, '0');
+    secondsElement.textContent = String(timeLeft.seconds).padStart(2, '0');
+}
+
+setInterval(updateTimer, 1000);
+updateTimer();
