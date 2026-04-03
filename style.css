@@ -434,7 +434,8 @@ a {
 
 
 .times {
-    max-width: 480px;
+    margin-top: -10%;
+    max-width: 430px;
     width: 80%;
     text-align: center;
     display: flex;
