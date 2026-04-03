@@ -434,7 +434,6 @@ a {
 
 
 .times {
-    margin-top: -10%;
     max-width: 430px;
     width: 80%;
     text-align: center;
@@ -483,7 +482,8 @@ a {
 }
 
 .timer {
-    max-width: 480px;
+        margin-top: -10%;
+    max-width: 430px;
     width: 100%;
     display: flex;
     align-items: center;
