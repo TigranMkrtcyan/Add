@@ -617,7 +617,6 @@ a {
 /*Love****************************************************************************************************************************************/
 
 .love {
-    position: relative;
     margin: auto;
     max-width: 430px;
     height: 600px;
@@ -630,6 +629,6 @@ a {
 }
 
 #love {
-    font-size: 30px;
+    font-size: 26px;
     font-family: "Vrdznagir";
 }
