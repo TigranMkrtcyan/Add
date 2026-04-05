@@ -14,6 +14,13 @@ body {
 }
 
 @font-face {
+    font-family: "Vrdznagir";
+    src: url("Vrdznagir.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
     font-family: "KotaykR";
     src: url("Kotayk-Regular.ttf") format("truetype");
     font-style: normal;
@@ -585,4 +592,44 @@ a {
     text-align: center;
     color: #5C2018;
     font-family: "Noto Sans Armenian", sans-serif;
+}
+
+/*QR*/
+
+.qr {
+    max-width: 430px;
+    margin: auto;
+}
+
+#qr {
+    max-width: 430px;
+}
+
+/*Void****************************************************************************************************************************************/
+
+.void {
+    max-width: 430px;
+    height: 100vh;
+}
+
+/*Love****************************************************************************************************************************************/
+
+.love {
+    position: relative;
+    margin: auto;
+    max-width: 430px;
+    height: 500px;
+    background-image: url(love.jpg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#love {
+    font-size: 29px;
+    font-family: "Vrdznagir";
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
