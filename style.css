@@ -597,12 +597,13 @@ a {
 /*QR*/
 
 .qr {
-    max-width: 430px;
+    max-width: 380px;
     margin: auto;
 }
 
 #qr {
-    max-width: 430px;
+    margin: auto;
+    max-width: 380px;
     width: 100%;
 }
 
@@ -619,15 +620,15 @@ a {
     position: relative;
     margin: auto;
     max-width: 430px;
-    height: 581px;
+    height: 600px;
     background-image: url(love.jpg);
-    background-position: top;
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #love {
-    font-size: 26px;
+    font-size: 23px;
     font-family: "Vrdznagir";
     position: absolute;
     top: 5%;
