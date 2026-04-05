@@ -4,6 +4,8 @@ body {
     margin: 0%;
 }
 
+/*Fonts****************************************************************************************************************************************/
+
 @font-face {
     font-family: "Kotayk";
     src: url("Kotayk-Italic.ttf") format("truetype");
@@ -40,15 +42,7 @@ body {
         "wdth" 100;
 }
 
-
-.canvas {
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    touch-action: none;
-    position: absolute;
-
-}
+/*head****************************************************************************************************************************************/
 
 .head {
     margin: 0 auto;
@@ -58,7 +52,6 @@ body {
     max-width: 430px;
     overflow: hidden;
     padding: 0;
-    margin: 0;
 }
 
 video {
@@ -117,6 +110,58 @@ h1 {
     color: #5C2018;
 }
 
+
+@keyframes text1 {
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 29%;
+    }
+}
+
+@keyframes text2 {
+    from {
+        top: -35%;
+    }
+
+    to {
+        top: 45%;
+    }
+}
+
+@keyframes date {
+    from {
+        top: -35%;
+    }
+
+    to {
+        top: 65%;
+    }
+}
+
+@keyframes text3 {
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 33%;
+    }
+}
+
+/*Coins****************************************************************************************************************************************/
+
+.canvas {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    touch-action: none;
+    position: absolute;
+
+}
+
 .date {
     position: relative;
     width: 105px;
@@ -148,6 +193,26 @@ h1 {
     opacity: 1;
 }
 
+.header {
+    margin-top: 60px;
+    font-weight: 100;
+    font-family: "Noto Sans Armenian", sans-serif;
+    color: #5C2018;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-5%);
+    transition: 1s;
+}
+
+.header.active {
+    transform: translateY(-5%);
+    opacity: 1;
+}
+
+/*Audio****************************************************************************************************************************************/
+
 .au {
     margin: auto;
     margin-top: 30px;
@@ -161,7 +226,6 @@ h1 {
 
 .audio-controls {
     position: relative;
-    ;
 }
 
 .audiobtn {
@@ -185,24 +249,7 @@ h1 {
     transform: scale(1.1) !important;
 }
 
-.header {
-    margin-top: 60px;
-    font-weight: 100;
-    font-family: "Noto Sans Armenian", sans-serif;
-    color: #5C2018;
-    font-size: 16px;
-    display: block;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(-5%);
-    transition: 1s;
-}
-
-.header.active {
-    transform: translateY(-5%);
-    opacity: 1;
-}
-
+/*Later****************************************************************************************************************************************/
 
 .later {
     background-image: url(Background.png);
@@ -237,14 +284,10 @@ h1 {
     font-weight: 400;
     font-size: 35px;
     line-height: 80%;
-    /* identical to box height, or 48px */
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #5C2018;
-
-
 }
 
 .lng-latetext2 {
@@ -256,8 +299,10 @@ h1 {
     font-weight: 100;
 }
 
+/*Maps****************************************************************************************************************************************/
 
 .maps {
+    margin: auto;
     text-align: center;
     max-width: 480px;
     width: 100%;
@@ -321,8 +366,6 @@ a {
 }
 
 .map {
-
-
     text-align: center;
     border: 1px solid #5C2018;
     padding: 15px 10px;
@@ -344,8 +387,15 @@ a {
     opacity: 1;
 }
 
+/*imgs****************************************************************************************************************************************/
+
+.imgs {
+    margin: auto;
+    max-width: 430px;
+}
 
 .line {
+    margin: auto;
     overflow: hidden;
     max-width: 430px;
     width: 100%;
@@ -353,6 +403,7 @@ a {
 }
 
 .tow {
+    margin: auto;
     overflow: hidden;
     max-width: 430px;
     width: 100%;
@@ -360,7 +411,10 @@ a {
     margin-bottom: -20%;
 }
 
+/*Long****************************************************************************************************************************************/
+
 .long {
+    margin: auto;
     max-width: 430px;
     width: 100%;
     height: 660px;
@@ -432,6 +486,7 @@ a {
     font-size: 33px;
 }
 
+/*Timer****************************************************************************************************************************************/
 
 .times {
     max-width: 430px;
@@ -482,7 +537,8 @@ a {
 }
 
 .timer {
-        margin-top: -10%;
+    margin: auto;
+    margin-top: -10%;
     max-width: 430px;
     width: 100%;
     display: flex;
@@ -500,21 +556,15 @@ a {
     opacity: 1;
 }
 
-
-.mark {
-    margin-top: -30px;
-    font-family: "Bruney";
-    font-weight: 100;
-    font-size: 36px;
-}
-
-
 .lng-timerhead {
     font-family: "KotaykR";
     color: #5C2018;
 }
 
+/*Car****************************************************************************************************************************************/
+
 .cars {
+    margin: auto;
     max-width: 430px;
     width: 100%;
     display: flex;
@@ -535,45 +585,4 @@ a {
     text-align: center;
     color: #5C2018;
     font-family: "Noto Sans Armenian", sans-serif;
-}
-
-
-@keyframes text1 {
-    from {
-        left: -120%;
-    }
-
-    to {
-        left: 29%;
-    }
-}
-
-@keyframes text2 {
-    from {
-        top: -35%;
-    }
-
-    to {
-        top: 45%;
-    }
-}
-
-@keyframes date {
-    from {
-        top: -35%;
-    }
-
-    to {
-        top: 65%;
-    }
-}
-
-@keyframes text3 {
-    from {
-        left: -120%;
-    }
-
-    to {
-        left: 33%;
-    }
 }
