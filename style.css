@@ -621,25 +621,15 @@ a {
     margin: auto;
     max-width: 430px;
     height: 600px;
-    /* background-image: url(love.jpg);
+    background-image: url(love.jpg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; */
-}
-
-.limg {
-    max-width: 380px;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 100px;
 }
 
 #love {
     font-size: 30px;
     font-family: "Vrdznagir";
-    position: absolute;
-    top: 5%;
-    left: 40%;
-    transform: translateX(-50%);
 }
