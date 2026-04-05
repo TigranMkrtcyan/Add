@@ -636,10 +636,10 @@ a {
 }
 
 #love {
-    font-size: 23px;
+    font-size: 30px;
     font-family: "Vrdznagir";
     position: absolute;
     top: 5%;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
 }
