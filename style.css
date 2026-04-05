@@ -632,3 +632,56 @@ a {
     font-size: 26px;
     font-family: "Vrdznagir";
 }
+
+/*Ayan*/
+
+
+.ayan {
+    padding-top: 80px;
+    max-width: 430px;
+    width: 100%;
+    height: 250px;
+    color: #DEDAD5;
+    font-family: "Vrdznagir";
+    background-image: url(Mask.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    /* line-height: 100px; */
+    text-align: center;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2) 100%, rgba(255, 255, 255, 0.05) 30%); */
+    backdrop-filter: blur(10px);
+    /* transform: translateY(10%); */
+    z-index: 12;
+    margin: 0;
+}
+
+.ayan>h2 {
+    margin: 0;
+}
+
+.logo {
+    width: 30%;
+    height: 70px;
+    margin: 0;
+}
+
+h6 {
+    font-family: "Noto Serif Armenian";
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    color: #A1A1AA63;
+}
+
+.foot {
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 1.5s 0.3s;
+}
+
+.foot.active {
+    transform: translateY(0%);
+    opacity: 1;
+}
