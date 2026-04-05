@@ -603,6 +603,7 @@ a {
 
 #qr {
     max-width: 430px;
+    width: 100%;
 }
 
 /*Void****************************************************************************************************************************************/
@@ -618,7 +619,7 @@ a {
     position: relative;
     margin: auto;
     max-width: 430px;
-    height: 500px;
+    height: 581px;
     background-image: url(love.jpg);
     background-position: top;
     background-size: contain;
@@ -626,7 +627,7 @@ a {
 }
 
 #love {
-    font-size: 29px;
+    font-size: 26px;
     font-family: "Vrdznagir";
     position: absolute;
     top: 5%;
