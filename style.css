@@ -56,7 +56,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100%;
-    max-width: 430px;
+    max-width: 480px;
     overflow: hidden;
     padding: 0;
 }
@@ -223,7 +223,7 @@ h1 {
 .au {
     margin: auto;
     margin-top: 30px;
-    max-width: 430px;
+    max-width: 480px;
     width: 100%;
     height: 70px;
     display: flex;
@@ -265,7 +265,7 @@ h1 {
     background-size: contain;
     margin: auto;
     /* margin-top: 80px; */
-    max-width: 430px;
+    max-width: 480px;
     width: 100%;
     height: 350px;
     display: flex;
@@ -398,13 +398,13 @@ a {
 
 .imgs {
     margin: auto;
-    max-width: 430px;
+    max-width: 480px;
 }
 
 .line {
     margin: auto;
     overflow: hidden;
-    max-width: 430px;
+    max-width: 480px;
     width: 100%;
     height: 70.25px;
 }
@@ -412,7 +412,7 @@ a {
 .tow {
     margin: auto;
     overflow: hidden;
-    max-width: 430px;
+    max-width: 480px;
     width: 100%;
     height: 300px;
     margin-bottom: -20%;
@@ -422,7 +422,7 @@ a {
 
 .long {
     margin: auto;
-    max-width: 430px;
+    max-width: 480px;
     width: 100%;
     height: 660px;
     display: flex;
@@ -496,7 +496,7 @@ a {
 /*Timer****************************************************************************************************************************************/
 
 .times {
-    max-width: 430px;
+    max-width: 480px;
     width: 80%;
     text-align: center;
     display: flex;
@@ -546,7 +546,7 @@ a {
 .timer {
     margin: auto;
     margin-top: -10%;
-    max-width: 430px;
+    max-width: 480px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -572,7 +572,7 @@ a {
 
 .cars {
     margin: auto;
-    max-width: 430px;
+    max-width: 480px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -610,7 +610,7 @@ a {
 /*Void****************************************************************************************************************************************/
 
 .void {
-    max-width: 430px;
+    max-width: 480px;
     height: 100vh;
 }
 
@@ -618,7 +618,7 @@ a {
 
 .love {
     margin: auto;
-    max-width: 430px;
+    max-width: 480px;
     height: 600px;
     background-image: url(love.jpg);
     background-position: center;
@@ -638,7 +638,7 @@ a {
 
 .ayan {
     padding-top: 80px;
-    max-width: 430px;
+    max-width: 480px;
     width: 100%;
     height: 250px;
     color: #DEDAD5;
