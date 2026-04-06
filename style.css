@@ -302,7 +302,7 @@ h1 {
 }
 
 .lng-latetext2 {
-    margin-top: 27px;
+    /* margin-top: 27px; */
     color: #5C2018;
     font-family: "Noto Sans Armenian", sans-serif;
     transform: translateY(-5%);
@@ -670,7 +670,7 @@ a {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    font-size: 30px;
+    font-size: 23px;
     /* line-height: 100px; */
     text-align: center;
     /* background: linear-gradient(rgba(0, 0, 0, 0.2) 100%, rgba(255, 255, 255, 0.05) 30%); */
