@@ -191,8 +191,6 @@ h1 {
     gap: 20px;
     justify-content: center;
     position: relative;
-    opacity: 0;
-    transform: translateY(-5%);
     transition: 1s;
 }
 
