@@ -83,6 +83,7 @@ h1 {
 }
 
 .name1 {
+    width: 200px;
     font-size: 78px;
     position: absolute;
     top: 31%;
