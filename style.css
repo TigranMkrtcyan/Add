@@ -89,6 +89,7 @@ h1 {
     left: -80%;
     transform: translate(-5%, -5%);
     color: #5C2018;
+    overflow: visible;
 }
 
 .and {
@@ -620,7 +621,7 @@ a {
     margin: auto;
     max-width: 480px;
     height: 600px;
-    background-image: url(love.jpg);
+    background-image: url(love.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -635,6 +636,25 @@ a {
 
 /*Ayan*/
 
+
+.b {
+    margin: auto;
+    max-width: 480px;
+    width: 100%;
+    height: 400px;
+    background-color: #5C2018;
+
+}
+
+.c {
+    margin: auto;
+    margin-top: -15%;
+    max-width: 380px;
+    height: 260px;
+    width: 100%;
+    background-color: white;
+    border-radius: 0% 0% 5% 5%;
+}
 
 .ayan {
     padding-top: 80px;
@@ -651,10 +671,9 @@ a {
     /* line-height: 100px; */
     text-align: center;
     /* background: linear-gradient(rgba(0, 0, 0, 0.2) 100%, rgba(255, 255, 255, 0.05) 30%); */
-    backdrop-filter: blur(10px);
     /* transform: translateY(10%); */
     z-index: 12;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .ayan>h2 {
