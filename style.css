@@ -279,6 +279,11 @@ h1 {
     z-index: 12;
 }
 
+.d {
+    font-family: "Great Vibes";
+    font-size: 36px;
+}
+
 .later.active {
     transform: translateY(-0%);
     opacity: 1;
@@ -647,7 +652,7 @@ a {
 .c {
     margin: auto;
     margin-top: -15%;
-    max-width: 380px;
+    max-width: 400px;
     height: 260px;
     width: 100%;
     background-color: white;
@@ -656,7 +661,7 @@ a {
 
 .ayan {
     padding-top: 80px;
-    max-width: 480px;
+    max-width: 380px;
     width: 100%;
     height: 250px;
     color: #DEDAD5;
